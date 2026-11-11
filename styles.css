@@ -1,0 +1,366 @@
+     /* Final Project
+     Name: Princess Merie Santiago
+     Date: 2025-08-15
+     Description: My Portfolio */
+
+body {
+    font-family:  'Lexend Deca', sans-serif;
+    background-color: #D4E6C8;
+    color: #3A4F41;
+    min-height: 100vh;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Header and Navigation */
+
+header {
+    background-color: #7EA172;
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+}
+
+#header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* margin-bottom: 0; */
+    color: white;
+    margin: 0;
+}
+
+#nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    text-align: center;
+    
+}
+
+
+/*All navigation links */
+#nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    transition: color 0.5s ease, transform 0.2s ease;
+}
+
+#nav-bar a:hover {
+    color: #A8C69F;
+    transform: scale(1.05);
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.text-content h3,
+.text-content h4 {
+    margin-bottom: 0.25rem;
+}
+
+.text-content p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+}
+
+.text-content h2 {
+    font-size: 4rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+}
+
+.text-content h3 {
+    font-size: 2rem;
+}
+
+.text-content h4 {
+    font-size: 1.5rem;
+}
+
+
+
+.text-content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #7EA172;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+#social-icon {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /* text-align: center; */
+}
+
+#social-icon a {
+    /* Increased font-size */
+    font-size: 2rem;
+    color: #5B7F5B;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#social-icon a:hover {
+    color: #7EA172;
+    /* Added a scale transform on hover */
+    transform: scale(1.1);
+}
+
+
+
+/* About Me Page Styles */
+#about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #A8C69F;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    text-align: center;
+
+}
+
+#about-content h3 {
+    font-size: 1.75em;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+#about-content p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+
+}
+
+
+
+
+
+/* Contact Page Styles */
+#contact-content {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #A8C69F;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1-rgba(0, 0, 0, 0, 0.06);
+    text-align: center;
+}
+
+#contact-content h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #5B7F5B;
+    /* margin-bottom: 1rem; */
+}
+
+#contactInfo fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contactInfo ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+#contactInfo li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+#contactInfo h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    white-space: nowrap;
+    margin-right: auto;
+}
+
+
+#contactInfo label {
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    width: 120px;
+}
+
+#contactInfo input,
+#contactInfo textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #7EA172;
+    background-color: #D4E6C8;
+    color: #3A4F41;
+    margin: 0 auto;
+    display: block;
+    flex: 1;
+}
+
+.textarea-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#contactInfo textarea {
+    resize: both;
+    overflow: hidden;
+    padding-bottom: 0.5rem;
+    width: 500px;
+    height: 180px;
+    display: grid;
+    font-size: 15px;
+}
+
+#contactInfo input:focus,
+#contactInfo textarea:focus {
+    outline: none;
+    border-color: #5B7F5B;
+    box-shadow: 0 0 0 3px rgba(91, 127, 91, 0.4);
+}
+
+.form-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem
+}
+
+.form-buttons button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.form-buttons button[type="submit"] {
+    background-color: #5B7F5B;
+    color: #D4E6C8;
+    border: none;
+}
+
+.form-buttons button[type="submit"]:hover {
+    background-color: #7EA172;
+}
+
+.form-buttons button[type="reset"] {
+    background-color: #3A4F41;
+    color: #D4E6C8;
+    border: none;
+}
+
+.form-buttons button[type="reset"]:hover {
+    background-color: #5B7F5B;
+}
+
+/* #error-message {
+    color: #D4E6C8;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+} */
+
+.error {
+    display: none; /* hidden by default */
+    color: red;
+    font-size: 0.9rem;
+}
+.error.show {
+    display: inline; /* show when JS adds 'show' class */
+}
+
+
+/* Desktop Media query */
+@media (min-width: 768px) {
+    #header-container {
+    flex-direction: row;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+    #nav-bar ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    /* Home Page Specific */
+    .content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    .text-content {
+        width: 66.66%;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .image-content {
+        width: 33.33%;
+        justify-content: flex-end;
+    }
+
+    .profile-image {
+        width: 20rem;
+        height: 20rem;
+    }
+}
